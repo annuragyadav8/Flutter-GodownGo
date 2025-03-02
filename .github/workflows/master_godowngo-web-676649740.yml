@@ -23,6 +23,11 @@ jobs:
         with:
           node-version: '16.x'
 
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2  # Install Flutter
+        with:
+          flutter-version: stable  # Always use the latest stable version
+
       - name: Flutter Install, Build, and Test
         run: |
           flutter pub get
