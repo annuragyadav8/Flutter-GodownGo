@@ -26,7 +26,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2  # Install Flutter
         with:
-          flutter-version: stable  # Always use the latest stable version
+          flutter-version: "3.16.1"  # Always use the latest stable version
 
       - name: Flutter Install, Build, and Test
         run: |
